@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+@font-face {
+  font-family: "pixel1";
+  src: url(fonts/paladins.ttf) format("truetype");
+}
+@font-face {
+  font-family: "pixel2";
+  src: url(fonts/RETROTECH.ttf) format("truetype");
+}
+
+:root {
+  --tech1: #96ffff;
+  --tech2: #74e6ef;
+  --tech3: #52cde0;
+  --tech4: #2fb4d0;
+  --tech5: #0d9bc0;
+  --azul1: #2a7aa7;
+  --azul2: #206a96;
+  --azul3: #155a84;
+  --azul4: #0b4a73;
+  --azul5: #003a61;
+  --cinza1: #858585;
+  --cinza2: #737373;
+  --cinza3: #616161;
+  --cinza4: #4f4f4f;
+  --cinza5: #3d3d3d;
+  --fonte1: "Krona One", sans-serif;
+  --fonte2: "Cascadia Code", sans-serif;
+  --fonte3: "Montserrat", sans-serif;
+  --fonte4: "pixel1";
+  --fonte5: "pixel2";
+  --fonte6: "Silkscreen", sans-serif;
+  --fonte7: "Audiowide", sans-serif;
+  --sombra-texto: "4px 4px 7px black";
+}
+body {
+  background-image: radial-gradient(
+    var(--cinza3),
+    var(--cinza4),
+    var(--cinza5)
+  );
+
+  box-sizing: border-box;
+}
+header {
+  background-image: linear-gradient(to bottom, var(--tech4), var(--tech5));
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+header img {
+  height: 150px;
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+  opacity: 0.6;
+}
+h1 {
+  color: var(--tech1);
+  font-family: var(--fonte5);
+  font-weight: 100;
+  font-size: 60px;
+  text-align: center;
+  padding: 45px;
+  z-index: 1;
+}
+nav {
+  background-color: var(--azul5);
+  border: 6px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 5px;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav a {
+  font-family: var(--fonte4);
+  font-weight: 100;
+  background-image: radial-gradient(var(--tech3), var(--tech4), var(--tech5));
+  color: white;
+  text-decoration: none;
+  text-shadow: 4px 4px 7px black;
+  padding: 22px;
+  border: 4px;
+  border-radius: 5px;
+  border-style: outset;
+  border-color: var(--tech2);
+}
+nav a:hover {
+  text-decoration: underline;
+  background-image: radial-gradient(var(--azul1), var(--azul2), var(--azul3));
+}
+.conteudo-principal {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.conteudo-principal-foto {
+  width: 25%;
+  border: 10px;
+  border-color: var(--tech3);
+  border-radius: 10px;
+  border-style: solid;
+  box-shadow: 5px 5px 15px;
+}
+
+.conteudo-principal-flex {
+  width: 50%;
+}
+.conteudo-principal-texto {
+  padding: 0% 3%;
+  margin: 1% 7%;
+}
+.conteudo-principal h2 {
+  font-family: var(--fonte5);
+  color: var(--tech1);
+  font-size: 70px;
+  text-shadow: 4px 4px 7px black;
+}
+.conteudo-principal h3 {
+  font-family: var(--fonte2);
+  font-size: 35px;
+  color: var(--tech3);
+  font-weight: bold;
+  background-color: var(--azul4);
+  width: 79%;
+  border-radius: 5px;
+  text-indent: 3px;
+}
+.conteudo-principal-icones {
+  width: 40%;
+  display: flex;
+  margin: 6% 8%;
+
+  gap: 55px;
+}
+
+.conteudo-principal-icones img {
+  width: 70px;
+}
+.conteudo-principal-icones a {
+  padding: 15px;
+  border-color: black;
+}
+.conteudo-principal-icones a:hover {
+  background-color: var(--cinza1);
+  border: 3px;
+  border-color: black;
+  padding: 12px;
+  border-style: solid;
+  border-radius: 10px;
+}
+.conteudo-sobre {
+  margin: 30px;
+  margin-top: 200px;
+  padding: 20px;
+}
+.conteudo-sobre h2{
+  font-family: var(--fonte7);
+  font-size: 60px;
+  color: var(--tech1);
+  text-shadow: 4px 4px 7px black;
+}
+.conteudo-sobre p{
+  font-family: var(--fonte1);
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.conteudo-sobre mark{
+  background-color: var(--tech5);
+}
+
+.conteudo-sobre a{
+  color: rgb(197, 19, 19);
+  
+  font-weight: 300;
+}
+
+.conteudo-sobre a:hover{
+  background-color: rgb(29, 26, 26);
+  border-radius: 5px;
+}
+
+.conteudo-projetos{
+  margin: 30px;
+  margin-top: 200px;
+  padding: 20px;
+}
+.conteudo-projetos h2{
+  font-family: var(--fonte7);
+  font-size: 60px;
+  color: var(--tech1);
+  text-shadow: 4px 4px 7px black;
+}
+
+.conteudo-projetos-projetos{
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  justify-content:baseline;  
+  margin-top: 50px;
+}
+.conteudo-projetos img{
+  width: 350px;
+  border: 5px;
+  border-color: var(--tech2);
+  border-style: groove;
+}
+.conteudo-projetos-projetos-div{
+  
+  text-align: center;
+  box-sizing: border-box;
+}
+.conteudo-projetos-projetos h3{
+  font-family: var(--fonte6);
+  color: rgb(0, 255, 170);
+  font-size: 17px;
+  padding: 20px 0px;
+  text-shadow: 4px 4px 7px black;
+}
+
+
+
+
