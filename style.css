@@ -217,7 +217,9 @@ nav a:hover {
   border-style: groove;
 }
 .conteudo-projetos-projetos-div{
+  display: flex;
   
+  gap: 11rem;
   text-align: center;
   box-sizing: border-box;
 }
